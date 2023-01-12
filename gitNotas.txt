@@ -1,0 +1,58 @@
+Verificar si git está instalado
+    git --version
+
+Instalar git
+    https://git-scm.com/
+
+Configurar git
+    git config --global user.name "[name]" //ingrear el nombre del usuario
+    git config --global user.email "[email address]" //ingresar el correo del usuario
+    git config --global color.ui auto //activa la ayuda de colores
+
+Crear repositorio
+    git init
+
+Crear archivo .gitignore y agregar lo que se desaea ignorar
+    node_modules/
+    dist/
+
+Agregar todos los archivos al repositorio
+    git add .
+
+Realizar el primer commit para confirmar los cambios
+    git commit -m "Mensaje de commit"
+
+Para verificar los commit realizados
+    git log
+
+Publicar el sitio a github por primera vez (seguir pasos indicados por github)
+    git remote add origin https://github.com/davidmfrojas/blackjack-vite.git //url del repositorio
+
+Crear el branch principal
+    git branch -M main
+
+subir los cambios realizados
+    git push -u origin main
+
+Agregar archivo readme.md
+
+Para publicar el sitio en github (solamente paginas estaticas)
+    ejecutarelcomando npm run build y renombrar la carpeta dist a docs
+
+agregar al repositorio la carpeta creada
+    git add .
+
+subir los cambios
+    git commit -m "Mensaje de commit, sitio producción"
+    git push
+
+Publicarlo en github
+    1. ingrear al repositiorio
+        https://github.com/usuario/repositiorio
+    2. ingresar a Settings
+    3. Bucar Pages
+    4. En Build and deployment/Source seleccionar Deploy from a branch
+    5. En Branch Seleccionar el branch / folder en /docs
+    6. accionar el botón Save
+    7. ingresar de nuevo a Pages
+    8. El sitio debería mostrar la url publicada en verde para visitar
