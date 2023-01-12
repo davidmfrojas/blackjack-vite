@@ -46,6 +46,9 @@ subir los cambios
     git commit -m "Mensaje de commit, sitio producción"
     git push
 
+para ver el branch actual
+    git branch
+
 Publicarlo en github
     1. ingrear al repositiorio
         https://github.com/usuario/repositiorio
