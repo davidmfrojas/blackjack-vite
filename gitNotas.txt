@@ -39,7 +39,7 @@ Agregar archivo readme.md
 Para publicar el sitio en github (solamente paginas estaticas)
     ejecutarelcomando npm run build y renombrar la carpeta dist a docs
 
-agregar al repositorio la carpeta creada
+agregar al repositorio los cambios realizados
     git add .
 
 subir los cambios
